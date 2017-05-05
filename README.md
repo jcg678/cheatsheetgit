@@ -1,4 +1,4 @@
 MANUAL GIT
 =========
 
-Peuqueño manual sobre Git para recordar comandos.
+Pequeño manual sobre Git para recordar comandos.

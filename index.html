@@ -4,27 +4,56 @@
     <meta charset="UTF-8">
     <title>CheatSheet GIT</title>
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link type="text/css" href="estilos.css" rel="stylesheet">
 </head>
 <body>
+   <div class="container">
     <h1>Cheatsheet GIT</h1>
     <p>Voy comenzar una pequeña guia recordatorio de Git para poder tenerla a mano algunos de estos comandos incluiran breves explicaciones.</p>
-    <h2>Configuración</h2>
-    <ul>
-    <li>git config --global user.name "nombre apellidos"</li>    
-    <li>git config --global user.email "demo@demo.es"</li>    
-    <li>git config --list <i>muestra todas las configuraciones</i></li>
-    <li>git config --global core.editor <i>eliges tu editor para el texto del cambio ejemplo Notepad(Windows)</i></li>
-    <li>git help "valor" <i>muestra la ayuda respecto a un termino</i></li>
-    </ul>
-    <h2>Comandos Basicos</h2>
-    <ul>
-        <li>git init(inicia un repositorio)</li>
-        <li>git status(te dice el estado del repositorio si hay un archivo nuevo y no lo hemos agregado)</li>
-        <li>git add nombredearchivo(añade el archivo)</li>
-        <li>git commit -m "mensaje que queramos"(Así no nos aparece el editor de texto)</li>
-        <li>git commit (igual que el anterior pero abre el programa que elegimos en el core)</li>
-        <li>git log(Los commits que llevamos realizados)</li>
-    </ul>
-    
+    <div class="panel panel-default">
+        <h2>Zonas de Git</h2>
+        <ol>
+           <li>Directorio de trabajo(Actual)</li> 
+           <li>Área de preparación(addss)</li>
+           <li>Directorio Git(Commit)</li>
+        </ol>
+    </div>
+    <div class="panel panel-default">
+        <h2>Configuración</h2>
+        <ul>
+        <li>git config --global user.name "nombre apellidos"</li>    
+        <li>git config --global user.email "demo@demo.es"</li>    
+        <li>git config --list <i>muestra todas las configuraciones</i></li>
+        <li>git config --global core.editor <i>eliges tu editor para el texto del cambio ejemplo Notepad(Windows)</i></li>
+        <li>git help "valor" <i>muestra la ayuda respecto a un termino</i></li>
+        </ul>
+    </div>
+    <div class="panel panel-warning">
+        <h2>Comandos Basicos</h2>
+        <ul>
+            <li>git init(inicia un repositorio)</li>
+            <li>git status(te dice el estado del repositorio si hay un archivo nuevo y no lo hemos agregado)</li>
+            <li>git add nombredearchivo(añade el archivo)</li>
+            <li>git add . (añade todos los archivos)</li>
+            <li>git commit -m "mensaje que queramos"(Así no nos aparece el editor de texto)</li>
+            <li>git commit -m "mensaje (en este caso pulsamos enter antes de cerrar las comillas y escribimos todo lo que deseemos para finalizar escribimos comillas)"</li>
+            <li>git commit -a -m(pasa a la zona de confimación todos los añadidos anteriormente y realiza el commit)</li>
+            <li>git commit (igual que el anterior pero abre el programa que elegimos en el core)</li>
+            <li>git log(Los commits que llevamos realizados)</li>
+            <li>git diff(para ver la direncia con el commit anterior)</li>
+            <li>git diff --staged(la diferencia entre los archivos añadidos add y la modificación actual despues del add)</li>
+            <li>git reset HEAD nombre_de_archivo (saca el archivo de zona de preparación)</li>
+            <li>git add -A (agrega todos los que esten en areá de preparación)</li>
+            <li>git commit --amend (Editamos el mensaje del último commit)</li>
+            <li>git rm "nombre de archivo"(Elimina archivos add de nuestro directorio de trabajo, así no apreceran como no rastreados)</li>
+            <li>git checkout "archivo" (recupera el archivo borrado)</li>
+        </ul>
+    </div>
+    <h2>.gitignore</h2>
+    Es un archivo .gitignore en la carpeta raíz , donde se ponen los archivos que no queremos seguir
+    https://www.gitignore.io/ web donde te dan patrones según la programción que uses ejemplo Symfony
+   </div>
 </body>
 </html>
+ 
