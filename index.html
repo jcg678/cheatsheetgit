@@ -49,16 +49,24 @@
             <li>git diff --staged(la diferencia entre los archivos añadidos add y la modificación actual despues del add)</li>
             <li>git reset HEAD nombre_de_archivo (saca el archivo de zona de preparación)</li>
             <li>git add -A (agrega todos los que esten en areá de preparación)</li>
-            <li>git commit --amend (Editamos el mensaje del último commit)</li>
             <li>git rm "nombre de archivo"(Elimina archivos add de nuestro directorio de trabajo, así no apareceran como no rastreados)</li>
-            <li>git checkout -- "archivo" (recupera el archivo borrado)</li>
             <li>git mv "inicial" "final"(renombra el archivo)</li>
+            <li>git clone "url" "nombre-opcional"(Clona el repositorio) </li>
             
+        </ul>
+    </div>
+    
+    <div class="panel panel-warning">
+        <h2>Comandos Para volver atrás</h2>
+        <ul>
+           <li>git commit --amend (Editamos el mensaje del último commit y si agregamos archivos nuevos tambien se añaden al último commit)</li>
+           <li>git reset HEAD "archivo" (Saca el archivo añadido con el add del area de preparación)</li>
+           <li>git checkout -- "archivo" (recupera el archivo borrado o vuelve a su anterior versión si no lo hemos borrado)</li>
         </ul>
     </div>
     <h2>.gitignore</h2>
     Es un archivo .gitignore en la carpeta raíz , donde se ponen los archivos que no queremos seguir
-    https://www.gitignore.io/ web donde te dan patrones según la programción que uses ejemplo Symfony
+    https://www.gitignore.io/ web donde te dan patrones según la programación que uses ejemplo Symfony
    </div>
 </body>
 </html>
